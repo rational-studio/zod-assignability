@@ -1,6 +1,6 @@
 {
   "name": "zod-assignability",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TypeScript extend behavior implementation for Zod schemas",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,6 +12,16 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rational-studio/zod-assignability"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -22,7 +32,7 @@
     "type-checking"
   ],
   "author": "Zhongliang Wang",
-  "license": "ISC",
+  "license": "MIT",
   "packageManager": "pnpm@10.19.0",
   "devDependencies": {
     "@eslint/js": "^9.38.0",
